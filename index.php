@@ -16,6 +16,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="assets/javascript/javascript.js"></script>
+    <script src="assets/javascript/menu.js"></script>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
@@ -31,34 +32,57 @@
 </head>
 
 <body>
-<div id="menu">
-    <div class="logo">
-        <span><strong>Media Critics</strong> - critical about online media. </span>
+    <div id="menu">
+        <div class="logo">
+            <a href="#"><h3>Media Critics</h3></a>
+        </div>
+
+        <ul class="menu">
+            <a href="#">
+                <li>
+                    <span class="txt">Home</span>
+                    <span class="bg"></span>
+                </li>
+            </a>
+
+            <a href="#">
+                <li>
+                    <span class="txt">Over ons</span>
+                    <span class="bg"></span>
+                </li>
+            </a>
+
+            <a href="#">
+                <li>
+                    <span class="txt">Werk</span>
+                    <span class="bg"></span>
+                </li>
+            </a>
+
+            <a href="#">
+                <li>
+                    <span class="txt">Contact</span>
+                    <span class="bg"></span>
+                </li>
+            </a>
+        </ul>
     </div>
 
-    <ul class="menu">
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>Over ons</li></a>
-        <a href="#"><li>Werk</li></a>
-        <a href="#"><li>Contact</li></a>
-    </ul>
-</div>
+    <?php include_once('includes/theme-files/slider.php'); ?>
 
-<?php include_once('includes/theme-files/slider.php'); ?>
+    <?php include_once('includes/theme-files/about-us.php'); ?>
 
-<?php include_once('includes/theme-files/about-us.php'); ?>
+    <?php include_once('includes/theme-files/work.php'); ?>
 
-<?php include_once('includes/theme-files/work.php'); ?>
+    <?php include_once('includes/theme-files/facts.php'); ?>
 
-<?php include_once('includes/theme-files/facts.php'); ?>
+    <?php include_once('includes/theme-files/strategy.php'); ?>
 
-<?php include_once('includes/theme-files/strategy.php'); ?>
+    <?php include_once('includes/theme-files/services.php'); ?>
 
-<?php include_once('includes/theme-files/services.php'); ?>
+    <?php include_once('includes/theme-files/contact.php'); ?>
 
-<?php include_once('includes/theme-files/contact.php'); ?>
-
-<?php include_once('footer.php'); ?>
+    <?php include_once('footer.php'); ?>
 
 
 </body>
