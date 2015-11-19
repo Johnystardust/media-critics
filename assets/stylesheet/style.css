@@ -24,6 +24,10 @@ h3 {
   font-size: 24px;
   font-family: "Roboto", sans-serif; }
 
+h4 {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif; }
+
 span {
   font-size: 14px;
   font-family: "Roboto", sans-serif; }
@@ -192,14 +196,55 @@ span {
 #header {
   height: 100vh;
   overflow: hidden; }
+  #header .slide-navigation {
+    position: absolute;
+    width: 100%;
+    z-index: 1000; }
+    #header .slide-navigation .slide-navigation-button {
+      position: absolute;
+      width: 33px;
+      height: 70px;
+      top: 275px;
+      display: table;
+      background: #313131;
+      text-align: center;
+      cursor: pointer; }
+      #header .slide-navigation .slide-navigation-button .bg {
+        position: absolute;
+        background: #ffffff;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        transition: width 0.3s ease-in-out;
+        -webkit-transition: width 0.3s ease-in-out; }
+      #header .slide-navigation .slide-navigation-button i {
+        position: relative;
+        display: table-cell;
+        color: #ffffff;
+        vertical-align: middle;
+        transition: color 0.3s ease-in-out;
+        -webkit-transition: color 0.3s ease-in-out; }
+    #header .slide-navigation .slide-left {
+      left: 30px; }
+    #header .slide-navigation .slide-left:hover .bg {
+      width: 100%; }
+    #header .slide-navigation .slide-left:hover i {
+      color: #000000; }
+    #header .slide-navigation .slide-right {
+      right: 30px; }
+    #header .slide-navigation .slide-right:hover .bg {
+      width: 100%; }
+    #header .slide-navigation .slide-right:hover i {
+      color: #000000; }
   #header .slide-container {
     position: relative; }
     #header .slide-container .slide {
       position: absolute; }
       #header .slide-container .slide .overlay {
         position: absolute;
-        top: 45%;
-        left: 50px; }
+        top: 54%;
+        left: 9%; }
         #header .slide-container .slide .overlay .slide-title {
           display: inline-block;
           padding: 15px;
@@ -223,13 +268,27 @@ span {
           margin-left: 15px;
           text-align: center;
           background: #313131;
-          color: #ffffff; }
+          position: relative; }
+          #header .slide-container .slide .overlay .slide-link .bg {
+            position: absolute;
+            background: #ffffff;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            transition: width 0.3s ease-in-out;
+            -webkit-transition: width 0.3s ease-in-out; }
           #header .slide-container .slide .overlay .slide-link i {
             position: relative;
-            top: 15px; }
-        #header .slide-container .slide .overlay .slide-link:hover {
-          background: #dcdcdc;
-          color: #313131; }
+            z-index: 1000;
+            top: 15px;
+            color: #ffffff;
+            transition: color 0.3s ease-in-out;
+            -webkit-transition: color 0.3s ease-in-out; }
+        #header .slide-container .slide .overlay .slide-link:hover .bg {
+          width: 100%; }
+        #header .slide-container .slide .overlay .slide-link:hover i {
+          color: #000000; }
 
 #about-us .text {
   max-width: 60%;
@@ -240,27 +299,71 @@ span {
 
 #work {
   border-top: 10px solid #313131;
-  background: #313131; }
-  #work .work-block .work-info {
-    display: none;
-    background: #b5b5b5;
-    height: 450px;
-    padding: 30px;
-    color: #ffffff; }
-    #work .work-block .work-info h2 {
-      margin-top: 0;
-      margin-bottom: 20px; }
-    #work .work-block .work-info .work-text {
-      display: block;
-      max-width: 80%;
-      line-height: 27px; }
-    #work .work-block .work-info .button {
+  background: #313131;
+  overflow: hidden; }
+  #work .active {
+    z-index: 100000 !important; }
+  #work .work-block {
+    position: relative;
+    z-index: 10000;
+    left: 0;
+    transition: left 0.3s ease-in-out;
+    -webkit-transition: left 0.3s ease-in-out;
+    cursor: pointer; }
+    #work .work-block .work-image .work-overlay {
       position: absolute;
-      bottom: 30px; }
-    #work .work-block .work-info .close-button {
+      width: 100%;
+      height: 100%;
+      top: 100%;
+      background: rgba(49, 49, 49, 0.7);
+      transition: top 0.3s ease-in-out;
+      -webkit-transition: top 0.3s ease-in-out;
+      text-align: center; }
+      #work .work-block .work-image .work-overlay .overlay-inside {
+        width: 100%;
+        height: 100%;
+        display: table; }
+        #work .work-block .work-image .work-overlay .overlay-inside span {
+          display: table-cell;
+          vertical-align: middle;
+          color: #ffffff; }
+          #work .work-block .work-image .work-overlay .overlay-inside span h2 {
+            font-weight: 300; }
+          #work .work-block .work-image .work-overlay .overlay-inside span h4 {
+            font-weight: 300; }
+          #work .work-block .work-image .work-overlay .overlay-inside span hr {
+            max-width: 45px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px; }
+    #work .work-block .work-image:hover .work-overlay {
+      top: 0% !important; }
+    #work .work-block .work-info {
+      z-index: 100000;
       position: absolute;
-      top: 30px;
-      right: 30px; }
+      width: 200%;
+      height: 100%;
+      top: 0;
+      left: 300%;
+      padding: 30px;
+      background: #b5b5b5;
+      color: #ffffff;
+      transition: left 0.3s ease-in-out;
+      -webkit-transition: left 0.3s ease-in-out; }
+      #work .work-block .work-info h2 {
+        margin-top: 0;
+        margin-bottom: 20px; }
+      #work .work-block .work-info .work-text {
+        display: block;
+        max-width: 80%;
+        line-height: 27px; }
+      #work .work-block .work-info .button {
+        position: absolute;
+        bottom: 30px; }
+      #work .work-block .work-info .close-button {
+        position: absolute;
+        top: 30px;
+        right: 30px; }
 
 #facts {
   background: #313131; }
