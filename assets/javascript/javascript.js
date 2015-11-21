@@ -43,4 +43,21 @@ $(document).ready(function(){
 
         return false;
     });
+
+
+    $('.strategy-point').hover(function(){
+        $(this).find('.icon-wrapper').addClass('animated flip');
+    });
+
+    $('.strategy-point').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(this).find('.icon-wrapper').removeClass('animated flip');
+    });
+
+    $('.service').hover(function(){
+        $(this).find('.small-icon-wrapper').addClass('animated flip');
+    });
+
+    $('.service').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(this).find('.small-icon-wrapper').removeClass('animated flip');
+    });
 });

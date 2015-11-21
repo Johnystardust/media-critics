@@ -16,6 +16,21 @@ body {
 .container-capped {
   padding: 50px 60px; }
 
+.go-to-top {
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  display: table;
+  right: 30px;
+  bottom: 30px;
+  text-align: center;
+  background: #b5b5b5;
+  z-index: 1000000; }
+  .go-to-top i {
+    display: table-cell;
+    vertical-align: middle;
+    color: #ffffff; }
+
 h2 {
   font-size: 36px;
   font-family: "Roboto", sans-serif; }
@@ -131,7 +146,7 @@ span {
   height: 50px;
   width: 100%;
   position: fixed;
-  z-index: 10000;
+  z-index: 1000000;
   background-color: transparent;
   border-bottom: 1px solid;
   border-bottom-color: transparent;
