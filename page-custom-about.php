@@ -3,8 +3,8 @@
  * Created by PhpStorm.
  * User: Tim van der Slik
  * Project: Media Critics
- * Date: 11/17/2015
- * Time: 2:09 PM
+ * Date: 11/23/2015
+ * Time: 1:19 PM
  */
 ?>
 
@@ -13,10 +13,6 @@
 <?php include_once('includes/theme-files/slider.php'); ?>
 
 <?php include_once('includes/theme-files/about-us.php'); ?>
-
-<?php include_once('includes/theme-files/work.php'); ?>
-
-<?php include_once('includes/theme-files/facts.php'); ?>
 
 <?php include_once('includes/theme-files/strategy.php'); ?>
 

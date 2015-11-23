@@ -77,7 +77,6 @@ $(document).ready(function(){
     //    $(this).find('.small-icon-wrapper').removeClass('animated flip');
     //});
 
-
     /*
      |----------------------------------------------------------------
      |   Go to top Function
@@ -101,6 +100,17 @@ $(document).ready(function(){
     $('.go-to-top').click(function(){
         $("html, body").animate({ scrollTop: 0 },600);
         return false
+    });
+
+
+
+    var waypoint = new Waypoint({
+        element: document.getElementById('facts'),
+        handler: function() {
+            $('.timer').countTo('start');
+            $('.timer').removeClass('timer');
+        },
+        offset: 300
     });
 
 });
