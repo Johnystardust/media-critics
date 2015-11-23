@@ -10,7 +10,7 @@
 
 <div id="header" class="container-fluid no-padding">
     <div class="slide-navigation">
-        <div class="slide-left slide-navigation-button">
+        <div class="slide-left slide-navigation-button animated bounceOutLeft">
             <span class="bg"></span>
             <i class="icon icon-left-open"></i>
         </div>

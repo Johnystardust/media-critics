@@ -15,10 +15,11 @@
     <title></title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="assets/javascript/slider.js"></script>
     <script src="assets/javascript/javascript.js"></script>
     <script src="assets/javascript/menu.js"></script>
     <link rel="stylesheet" href="assets/animate-css/animate.css">
-    <script src="assets/nice-scroll/jquery.nicescroll.min.js"></script>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
@@ -32,19 +33,19 @@
     <link rel="stylesheet" href="assets/fontello/fontello-embedded.css"/>
 
     <style>
-        /*::-webkit-scrollbar {*/
-            /*width: 12px;*/
-        /*}*/
-        /*::-webkit-scrollbar-track {*/
-            /*background-color: #dcdcdc;*/
-            /*border-left: 1px solid #ccc;*/
-        /*}*/
-        /*::-webkit-scrollbar-thumb {*/
-            /*background-color: #b5b5b5;*/
-        /*}*/
-        /*::-webkit-scrollbar-thumb:hover {*/
-            /*background-color: #313131;*/
-        /*}*/
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background-color: #dcdcdc;
+            border-left: 1px solid #ccc;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #b5b5b5;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #313131;
+        }
     </style>
 
 </head>
@@ -53,6 +54,7 @@
     <a href="">
         <div class="go-to-top">
             <i class="icon icon-up-open"></i>
+            <span class="bg"></span>
         </div>
     </a>
 

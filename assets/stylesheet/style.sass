@@ -39,12 +39,33 @@ body
   right: 30px
   bottom: 30px
   text-align: center
-  background: $grey
+  background-color: rgba(49, 49, 49, 0.9)
+  border: 1px solid
+  border-color: rgba(255, 255, 255, 0.9)
+  transition: border-color 0.3s ease-in-out
+  -webkit-transition: border-color 0.3s ease-in-out
   z-index: 1000000
   i
     display: table-cell
     vertical-align: middle
     color: $text_white
+    z-index: 1000
+    position: relative
+  .bg
+    position: absolute
+    background: rgba(255, 255, 255, 0.9)
+    top: 0
+    left: 0
+    width: 0%
+    height: 100%
+    transition: width 0.3s ease-in-out
+    -webkit-transition: width 0.3s ease-in-out
+.go-to-top:hover
+  border-color: rgba(49, 49, 49, 0.9)
+  i
+    color: $black
+  .bg
+    width: 100%
 
 // Typography
 h2

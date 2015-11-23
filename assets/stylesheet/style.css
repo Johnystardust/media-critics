@@ -24,12 +24,34 @@ body {
   right: 30px;
   bottom: 30px;
   text-align: center;
-  background: #b5b5b5;
+  background-color: rgba(49, 49, 49, 0.9);
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.9);
+  transition: border-color 0.3s ease-in-out;
+  -webkit-transition: border-color 0.3s ease-in-out;
   z-index: 1000000; }
   .go-to-top i {
     display: table-cell;
     vertical-align: middle;
-    color: #ffffff; }
+    color: #ffffff;
+    z-index: 1000;
+    position: relative; }
+  .go-to-top .bg {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+    -webkit-transition: width 0.3s ease-in-out; }
+
+.go-to-top:hover {
+  border-color: rgba(49, 49, 49, 0.9); }
+  .go-to-top:hover i {
+    color: #000000; }
+  .go-to-top:hover .bg {
+    width: 100%; }
 
 h2 {
   font-size: 36px;
