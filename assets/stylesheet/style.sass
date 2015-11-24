@@ -67,6 +67,9 @@ body
     width: 100%
 
 // Typography
+h1
+  font-size: 44px
+  font-family: "Roboto", sans-serif
 h2
   font-size: 36px
   font-family: "Roboto", sans-serif
@@ -112,69 +115,7 @@ span
     margin: 0 auto
     border-color: $dark_grey
 
-// Buttons
-.button
-  position: relative
-  width: 200px
-  height: 44px
-  display: table
-  border: 1px solid $text_white
-  text-align: center
-  .txt
-    display: table-cell
-    vertical-align: middle
-    position: relative
-    z-index: 1000
-    text-transform: uppercase
-    color: $text_white
-    font-weight: 300
-    transition: color 0.3s ease-in-out
-    -webkit-transition: color 0.3s ease-in-out
-  .bg
-    position: absolute
-    background: $white
-    top: 0
-    left: 0
-    width: 0%
-    height: 100%
-    transition: width 0.3s ease-in-out
-    -webkit-transition: width 0.3s ease-in-out
-.button:hover
-  text-decoration: none
-  .txt
-    color: $black
-  .bg
-    width: 100%
 
-.close-button
-  width: 45px
-  height: 45px
-  display: table
-  border: 1px solid $text_white
-  text-align: center
-  i
-    display: table-cell
-    vertical-align: middle
-    position: relative
-    z-index: 1000
-    color: $text_white
-    font-weight: 300
-    transition: color 0.3s ease-in-out
-    -webkit-transition: color 0.3s ease-in-out
-  .bg
-    position: absolute
-    background: #ffffff
-    top: 0
-    left: 0
-    width: 0%
-    height: 100%
-    transition: width 0.3s ease-in-out
-    -webkit-transition: width 0.3s ease-in-out
-.close-button:hover
-  i
-    color: $black
-  .bg
-    width: 100%
 
 
 
@@ -190,4 +131,6 @@ span
 @import "sass-parts/_strategy"
 @import "sass-parts/_services"
 @import "sass-parts/_contact"
+@import "sass-parts/_link-block"
+@import "sass-parts/_buttons"
 @import "sass-parts/_footer"

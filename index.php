@@ -22,6 +22,6 @@
 
 <?php include_once('includes/theme-files/services.php'); ?>
 
-<?php include_once('includes/theme-files/contact.php'); ?>
+<?php include_once('includes/theme-files/link-block.php'); ?>
 
 <?php include_once('footer.php'); ?>

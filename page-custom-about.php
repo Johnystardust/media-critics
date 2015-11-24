@@ -10,7 +10,7 @@
 
 <?php include_once('header.php'); ?>
 
-<?php include_once('includes/theme-files/slider.php'); ?>
+<?php include_once('includes/theme-files/header-small.php'); ?>
 
 <?php include_once('includes/theme-files/about-us.php'); ?>
 
@@ -18,6 +18,6 @@
 
 <?php include_once('includes/theme-files/services.php'); ?>
 
-<?php include_once('includes/theme-files/contact.php'); ?>
+<?php include_once('includes/theme-files/link-block.php'); ?>
 
 <?php include_once('footer.php'); ?>

@@ -52,6 +52,10 @@ body {
   .go-to-top:hover .bg {
     width: 100%; }
 
+h1 {
+  font-size: 44px;
+  font-family: "Roboto", sans-serif; }
+
 h2 {
   font-size: 36px;
   font-family: "Roboto", sans-serif; }
@@ -98,70 +102,6 @@ span {
     max-width: 60px;
     margin: 0 auto;
     border-color: #313131; }
-
-.button {
-  position: relative;
-  width: 200px;
-  height: 44px;
-  display: table;
-  border: 1px solid #ffffff;
-  text-align: center; }
-  .button .txt {
-    display: table-cell;
-    vertical-align: middle;
-    position: relative;
-    z-index: 1000;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-weight: 300;
-    transition: color 0.3s ease-in-out;
-    -webkit-transition: color 0.3s ease-in-out; }
-  .button .bg {
-    position: absolute;
-    background: #ffffff;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    transition: width 0.3s ease-in-out;
-    -webkit-transition: width 0.3s ease-in-out; }
-
-.button:hover {
-  text-decoration: none; }
-  .button:hover .txt {
-    color: #000000; }
-  .button:hover .bg {
-    width: 100%; }
-
-.close-button {
-  width: 45px;
-  height: 45px;
-  display: table;
-  border: 1px solid #ffffff;
-  text-align: center; }
-  .close-button i {
-    display: table-cell;
-    vertical-align: middle;
-    position: relative;
-    z-index: 1000;
-    color: #ffffff;
-    font-weight: 300;
-    transition: color 0.3s ease-in-out;
-    -webkit-transition: color 0.3s ease-in-out; }
-  .close-button .bg {
-    position: absolute;
-    background: #ffffff;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    transition: width 0.3s ease-in-out;
-    -webkit-transition: width 0.3s ease-in-out; }
-
-.close-button:hover i {
-  color: #000000; }
-.close-button:hover .bg {
-  width: 100%; }
 
 #menu {
   height: 50px;
@@ -331,6 +271,17 @@ span {
         #header #slide-container .slide .overlay .slide-link:hover i {
           color: #000000; }
 
+#header-small {
+  max-height: 400px;
+  overflow: hidden; }
+  #header-small .overlay {
+    width: 100%;
+    position: absolute;
+    text-align: center; }
+    #header-small .overlay h1 {
+      font-weight: 300;
+      margin-top: 130px; }
+
 #about-us .text {
   max-width: 60%;
   margin: 0 auto;
@@ -468,23 +419,144 @@ span {
   #services .service .text-wrapper {
     padding-left: 55px; }
 
-#contact {
+#contact .text {
+  max-width: 60%;
+  margin: 0 auto;
+  margin-top: 50px;
+  line-height: 22px;
+  letter-spacing: 1px; }
+#contact form {
+  margin: 0 auto;
+  margin-top: 60px;
+  max-width: 60%; }
+#contact .form-control {
+  border: 1px solid #313131;
+  border-radius: 0px;
+  min-height: 44px; }
+#contact .form-control:focus {
+  border-color: #b5b5b5;
+  box-shadow: inset 0 1px 1px rgba(220, 220, 220, 0.7); }
+
+#link-block {
   background: #313131;
   text-align: center; }
-  #contact .button {
+  #link-block .button {
     margin: 0 auto; }
-  #contact .row {
+  #link-block .row {
     padding: 50px; }
-  #contact h2 {
+  #link-block h2 {
     color: #ffffff;
     font-weight: 300;
     margin-top: 0;
     margin-bottom: 0; }
-  #contact hr {
+  #link-block hr {
     max-width: 60px;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px; }
+
+.button {
+  position: relative;
+  width: 200px;
+  height: 44px;
+  display: table;
+  border: 1px solid #ffffff;
+  text-align: center; }
+  .button .txt {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1000;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 300;
+    transition: color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out; }
+  .button .bg {
+    position: absolute;
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+    -webkit-transition: width 0.3s ease-in-out; }
+
+.button:hover {
+  text-decoration: none; }
+  .button:hover .txt {
+    color: #000000; }
+  .button:hover .bg {
+    width: 100%; }
+
+.button-black {
+  position: relative;
+  width: 200px;
+  height: 44px;
+  display: table;
+  border: 1px solid #313131;
+  text-align: center; }
+  .button-black .txt {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1000;
+    text-transform: uppercase;
+    color: #313131;
+    font-weight: 300;
+    transition: color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out; }
+    .button-black .txt input {
+      background: none;
+      border: none;
+      text-transform: uppercase;
+      color: inherit; }
+  .button-black .bg {
+    position: absolute;
+    background: #313131;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+    -webkit-transition: width 0.3s ease-in-out; }
+
+.button-black:hover {
+  text-decoration: none; }
+  .button-black:hover .txt {
+    color: #ffffff; }
+  .button-black:hover .bg {
+    width: 100%; }
+
+.close-button {
+  width: 45px;
+  height: 45px;
+  display: table;
+  border: 1px solid #ffffff;
+  text-align: center; }
+  .close-button i {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1000;
+    color: #ffffff;
+    font-weight: 300;
+    transition: color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out; }
+  .close-button .bg {
+    position: absolute;
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+    -webkit-transition: width 0.3s ease-in-out; }
+
+.close-button:hover i {
+  color: #000000; }
+.close-button:hover .bg {
+  width: 100%; }
 
 #footer {
   background: #313131;

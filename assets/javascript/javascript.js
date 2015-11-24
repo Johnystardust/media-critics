@@ -88,6 +88,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
         if ($(this).scrollTop() > 400) {
             $('.go-to-top').show();
+            $('.go-to-top').css('display', 'table !important');
             $('.go-to-top').addClass('animated bounceInDown');
             $('.go-to-top').removeClass('bounceOutDown');
         } else {
@@ -104,13 +105,13 @@ $(document).ready(function(){
 
 
 
-    var waypoint = new Waypoint({
-        element: document.getElementById('facts'),
-        handler: function() {
-            $('.timer').countTo('start');
-            $('.timer').removeClass('timer');
-        },
-        offset: 300
-    });
+    //var waypoint = new Waypoint({
+    //    element: document.getElementById('facts'),
+    //    handler: function() {
+    //        $('.timer').countTo('start');
+    //        $('.timer').removeClass('timer');
+    //    },
+    //    offset: 300
+    //});
 
 });

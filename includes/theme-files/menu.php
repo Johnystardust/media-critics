@@ -42,7 +42,7 @@
             </li>
         </a>
 
-        <a href="#">
+        <a href="page-custom-contact.php">
             <li>
                 <span class="txt">Contact</span>
                 <span class="bg"></span>
