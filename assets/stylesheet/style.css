@@ -295,20 +295,23 @@ span {
   line-height: 22px;
   letter-spacing: 1px; }
 
-#work {
+#page-work, #work {
   border-top: 10px solid #313131;
   background: #313131;
   overflow: hidden; }
-  #work .active {
+  #page-work .work-row, #work .work-row {
+    position: relative;
+    z-index: 100000; }
+  #page-work .active, #work .active {
     z-index: 100000 !important; }
-  #work .work-block {
+  #page-work .work-block, #work .work-block {
     position: relative;
     z-index: 10000;
     left: 0;
     transition: left 0.3s ease-in-out;
     -webkit-transition: left 0.3s ease-in-out;
     cursor: pointer; }
-    #work .work-block .work-image .work-overlay {
+    #page-work .work-block .work-image .work-overlay, #work .work-block .work-image .work-overlay {
       position: absolute;
       width: 100%;
       height: 100%;
@@ -317,51 +320,51 @@ span {
       transition: top 0.3s ease-in-out;
       -webkit-transition: top 0.3s ease-in-out;
       text-align: center; }
-      #work .work-block .work-image .work-overlay .overlay-inside {
+      #page-work .work-block .work-image .work-overlay .overlay-inside, #work .work-block .work-image .work-overlay .overlay-inside {
         width: 100%;
         height: 100%;
         display: table; }
-        #work .work-block .work-image .work-overlay .overlay-inside span {
+        #page-work .work-block .work-image .work-overlay .overlay-inside span, #work .work-block .work-image .work-overlay .overlay-inside span {
           display: table-cell;
           vertical-align: middle;
           color: #ffffff; }
-          #work .work-block .work-image .work-overlay .overlay-inside span h2 {
+          #page-work .work-block .work-image .work-overlay .overlay-inside span h2, #work .work-block .work-image .work-overlay .overlay-inside span h2 {
             font-weight: 300; }
-          #work .work-block .work-image .work-overlay .overlay-inside span h4 {
+          #page-work .work-block .work-image .work-overlay .overlay-inside span h4, #work .work-block .work-image .work-overlay .overlay-inside span h4 {
             font-weight: 300; }
-          #work .work-block .work-image .work-overlay .overlay-inside span hr {
+          #page-work .work-block .work-image .work-overlay .overlay-inside span hr, #work .work-block .work-image .work-overlay .overlay-inside span hr {
             max-width: 45px;
             margin: 0 auto;
             margin-top: 20px;
             margin-bottom: 20px; }
-    #work .work-block .work-image:hover .work-overlay {
+    #page-work .work-block .work-image:hover .work-overlay, #work .work-block .work-image:hover .work-overlay {
       top: 0% !important; }
-    #work .work-block .work-info {
-      z-index: 100000;
+  #page-work .work-info, #work .work-info {
+    z-index: 100000;
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    top: 0;
+    left: 300%;
+    padding: 30px;
+    background: #b5b5b5;
+    color: #ffffff;
+    transition: left 0.3s ease-in-out;
+    -webkit-transition: left 0.3s ease-in-out; }
+    #page-work .work-info h2, #work .work-info h2 {
+      margin-top: 0;
+      margin-bottom: 20px; }
+    #page-work .work-info .work-text, #work .work-info .work-text {
+      display: block;
+      max-width: 80%;
+      line-height: 27px; }
+    #page-work .work-info .button, #work .work-info .button {
       position: absolute;
-      width: 200%;
-      height: 100%;
-      top: 0;
-      left: 300%;
-      padding: 30px;
-      background: #b5b5b5;
-      color: #ffffff;
-      transition: left 0.3s ease-in-out;
-      -webkit-transition: left 0.3s ease-in-out; }
-      #work .work-block .work-info h2 {
-        margin-top: 0;
-        margin-bottom: 20px; }
-      #work .work-block .work-info .work-text {
-        display: block;
-        max-width: 80%;
-        line-height: 27px; }
-      #work .work-block .work-info .button {
-        position: absolute;
-        bottom: 30px; }
-      #work .work-block .work-info .close-button {
-        position: absolute;
-        top: 30px;
-        right: 30px; }
+      bottom: 30px; }
+    #page-work .work-info .close-button, #work .work-info .close-button {
+      position: absolute;
+      top: 30px;
+      right: 30px; }
 
 #facts {
   background: #313131; }

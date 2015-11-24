@@ -8,3 +8,12 @@
  */
 ?>
 
+<?php include_once('header.php'); ?>
+
+<?php include_once('includes/theme-files/header-small.php'); ?>
+
+<?php include_once('includes/theme-files/work.php'); ?>
+
+<?php include_once('includes/theme-files/link-block.php'); ?>
+
+<?php include_once('footer.php'); ?>

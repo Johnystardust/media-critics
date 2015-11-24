@@ -14,7 +14,7 @@
 
 <?php include_once('includes/theme-files/about-us.php'); ?>
 
-<?php include_once('includes/theme-files/work.php'); ?>
+<?php include_once('includes/theme-files/latest-work.php'); ?>
 
 <?php include_once('includes/theme-files/facts.php'); ?>
 
