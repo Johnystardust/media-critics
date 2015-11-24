@@ -103,8 +103,24 @@ $(document).ready(function(){
         return false
     });
 
+    /*
+     |----------------------------------------------------------------
+     |   Maps Hover Function
+     |----------------------------------------------------------------
+     */
+    $('#maps').hover(function(){
+        $('.gm-style div:last-child a div').css('opacity', 1);
+        $('.gmnoprint').css('opacity', 1);
+    }, function(){
+        $('.gm-style div:last-child a div').css('opacity', 0);
+        $('.gmnoprint').css('opacity', 0);
+    });
 
-
+    /*
+     |----------------------------------------------------------------
+     |   CountUp Waypoint Function
+     |----------------------------------------------------------------
+    */
     //var waypoint = new Waypoint({
     //    element: document.getElementById('facts'),
     //    handler: function() {

@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <div class="col-md-12 form-col">
+        <div class="col-md-12">
 
             <form>
                 <div class="row">
